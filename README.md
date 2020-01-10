@@ -1,18 +1,22 @@
 https://github.com/hchiam/learning-electron
 
-```bash
-npm install
-npm start
-```
+* setup:
 
-or
+  ```bash
+  npm install
+  npm start
+  ```
 
-```bash
-yarn
-yarn start
-```
+  or
+
+  ```bash
+  yarn
+  yarn start
+  ```
 
 https://github.com/electron/electron-api-demos/releases
+
+* Unzip to get and run an app that demos the most important features of Electron.
 
 https://www.freecodecamp.org/news/building-an-electron-application-with-create-react-app-97945861647c/
 
