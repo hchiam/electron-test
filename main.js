@@ -1,5 +1,5 @@
 // Modules to control application life and create native browser window
-const {app, BrowserWindow} = require('electron')
+const {app, BrowserWindow, Menu, MenuItem, ipcMain} = require('electron')
 const path = require('path')
 
 // Keep a global reference of the window object, if you don't, the window will
@@ -51,3 +51,26 @@ app.on('activate', function () {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
+const menu = new Menu()
+menu.append(new MenuItem({label: 'Hello', click: showNewWindow}))
+menu.append(new MenuItem({type: 'separator'}))
+menu.append(new MenuItem({label: 'Electron', type: 'checkbox', checked: true}))
+
+app.on('browser-window-created', (event, win) => {
+  win.webContents.on('context-menu', (e, params) => {
+    menu.popup(win, params.x, params.y)
+  })
+})
+
+ipcMain.on('show-context-menu', (event) => {
+  const win = BrowserWindow.fromWebContents(event.sender)
+  menu.popup(win)
+})
+
+function showNewWindow() {
+  let win = new BrowserWindow({ width: 300, height: 300 })
+  win.on('closed', () => {
+    win = null
+  })
+  win.loadURL(`file://${__dirname}/static/newWindow.html`)
+}
