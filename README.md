@@ -1,5 +1,17 @@
 https://github.com/hchiam/learning-electron
 
+```bash
+npm install
+npm start
+```
+
+or
+
+```bash
+yarn
+yarn start
+```
+
 https://github.com/electron/electron-api-demos/releases
 
 https://www.freecodecamp.org/news/building-an-electron-application-with-create-react-app-97945861647c/
