@@ -1,5 +1,7 @@
 https://github.com/hchiam/learning-electron
 
+https://github.com/electron/electron-api-demos/releases
+
 https://www.freecodecamp.org/news/building-an-electron-application-with-create-react-app-97945861647c/
 
 * src/`electron-starter.js`: `mainWindow`, `createWindow`, and `app.on` event listeners
