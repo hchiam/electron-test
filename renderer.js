@@ -4,11 +4,3 @@
 // `nodeIntegration` is turned off. Use `preload.js` to
 // selectively enable features needed in the rendering
 // process.
-
-const {ipcRenderer} = require('electron')
-
-const contextMenuBtn = document.getElementById('context-menu')
-
-contextMenuBtn.addEventListener('click', () => {
-  ipcRenderer.send('show-context-menu')
-})
