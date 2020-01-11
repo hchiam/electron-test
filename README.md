@@ -29,3 +29,5 @@ https://github.com/electron-react-boilerplate/electron-react-boilerplate
 * app/`index.js` -> `Root` from app/containers/`Root.js` -> `Routes` from app/`Routes.js` -> containers/`HomePage.js`, containers/`CounterPage.js`, app/containers/`App.js` -> app/components/`Home.js`, app/components/`Counter.js`, app/actions/`counter.js`
 
 https://www.tutorialspoint.com/electron/index.htm
+
+https://github.com/electron/simple-samples
