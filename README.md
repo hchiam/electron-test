@@ -1,3 +1,5 @@
+Main code flow: `main.js` -> `index.html` -> `renderer.js`
+
 https://github.com/hchiam/learning-electron
 
 * setup:
