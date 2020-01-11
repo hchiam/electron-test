@@ -8,3 +8,13 @@
 document.getElementById('button').addEventListener('click', () => {
   console.log('hi');
 })
+
+const notificationButton = document.getElementById('button')
+
+notificationButton.addEventListener('click', () => {
+  // instead of alert(), you can do new window.Notification()
+  new window.Notification('Notification title', {body: 'Notification body'})
+  .onclick = () => {
+    new window.Notification('2nd notification', {body: 'Say something else'})
+  }
+})
