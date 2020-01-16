@@ -15,6 +15,10 @@ button:hover, button:focus {
   color: black;
 }
 
+a {
+  color: lightblue;
+}
+
 a:hover, a:focus {
   color: lime;
 }
