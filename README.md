@@ -33,3 +33,5 @@ https://github.com/electron-react-boilerplate/electron-react-boilerplate
 https://www.tutorialspoint.com/electron/index.htm
 
 https://github.com/electron/simple-samples
+
+https://github.com/sindresorhus/electron-boilerplate
