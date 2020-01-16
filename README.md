@@ -34,4 +34,4 @@ https://www.tutorialspoint.com/electron/index.htm
 
 https://github.com/electron/simple-samples
 
-https://github.com/sindresorhus/electron-boilerplate
+https://github.com/sindresorhus/generator-electron
